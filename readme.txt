@@ -28,10 +28,16 @@ HOW TO RUN:-
 		  
 	Step3: Clone the project from the below repository:- 
 			https://github.com/hansika9/dlg-interview
-	Step4: Create a war file for this project by running the below command inside project folder, i.e. UserManagementPortal folder:-
+	Step4: Go to the UserManagementPortal\src\main\resources folder and only update the mysql credentials of your system in the application.properties file.
+		(update following properties)
+		database.url=jdbc:mysql://localhost:3306/<schema-name>
+		database.user=<username>
+		database.password=<password>
+			
+	Step5: Create a war file for this project by running the below command inside project folder, i.e. UserManagementPortal folder:-
 			Command:- mvn clean package
-	Step5: Copy the above created war file from UserManagementPortal/target folder into the webapps folder of your system's Apache Tomcat directory.
-	Step6: Start the tomcat server.
+	Step6: Copy the above created war file from UserManagementPortal/target folder into the webapps folder of your system's Apache Tomcat directory.
+	Step7: Start the tomcat server.
 
 IMPLEMENTED API's:-
 
